@@ -37,7 +37,7 @@ async def ask_trivia(message: Message):
 async def time(message: Message):
     current_date = datetime.now()
     delta = (current_date - fixed_date).days
-    await message.answer(f"С {fixed_date.strftime("%d.%m.%Y")} прошло {delta} дней. А это значит, что Владик тебя любит {delta} день!")
+    await message.answer(f"С {fixed_date.strftime('%d.%m.%Y')} прошло {delta} дней. А это значит, что Владик тебя любит {delta} день!")
 
 @router.message(Command("love"))
 async def love(message: Message):
